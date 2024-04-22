@@ -3,7 +3,7 @@ let $title = document.getElementById("color__hexadecimal");
 let $body = document.body;
 
 $btnRandomColor.addEventListener("click", function () {
-  let longitud = 7;
+  let longitud = 6;
   let letras = "abcdef";
   let numeros = "0123456789";
 
@@ -14,7 +14,7 @@ $btnRandomColor.addEventListener("click", function () {
     allChareters += letra;
     allChareters += numero;
 
-    for (let i = 0; i <= longitudColor; i++) {
+    for (let i = 1; i <= longitudColor; i++) {
       let randomIndex = Math.floor(Math.random() * allChareters.length);
       color += allChareters[randomIndex];
     }
